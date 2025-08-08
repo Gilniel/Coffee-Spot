@@ -1,0 +1,43 @@
+module.exports.descriptors = [
+    'Rustic',
+    'Cozy',
+    'Tropical',
+    'Boho',
+    'Hidden',
+    'Urban',
+    'Charming',
+    'Minimalist',
+    'Artsy',
+    'Lush',
+    'Vintage',
+    'Sunset',
+    'Mountain',
+    'Seaside',
+    'Classic',
+    'Fresh',
+    'Secret',
+    'Warm',
+    'Vibrant'
+];
+
+module.exports.places = [
+    'Café',
+    'Coffee Spot',
+    'Brew Bar',
+    'Espresso House',
+    'Patio Lounge',
+    'Coffee Garden',
+    'Brunch Corner',
+    'Balcony Café',
+    'Roastery',
+    'Bean House',
+    'Bakery & Brew',
+    'Coffee Lab',
+    'Coffee Truck',
+    'Tea Lounge',
+    'Coffee Terrace',
+    'Coffee Nook',
+    'Coffee Bistro',
+    'Latte Bar',
+    'Barista Corner'
+];
