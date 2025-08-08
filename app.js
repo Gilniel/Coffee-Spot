@@ -24,9 +24,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 
 mongoose.set('strictQuery', true);
 
-//const dbUrl = process.env.DB_URL;
-
-const dbUrl = 'mongodb://localhost:27017/coffee-spot';
+const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/coffee-spot';
 
 mongoose.connect(dbUrl);
 
@@ -48,9 +46,11 @@ app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(mongoSanitize());
 
+const secret = process.env.SECRET || 'thisshouldbeabetterscret!';
+
 const store = new MongoStore({
     url: dbUrl,
-    secret: 'thisshouldbeabetterscret!',
+    secret,
     touchAfter: 24 * 60 * 60, // time period in seconds
 });
 
@@ -61,7 +61,7 @@ store.on("error", function (e) {
 const sessionConfig = {
     store,
     name: 'session',
-    secret: 'thisshouldbeabetterscret!',
+    secret,
     resave: false,
     saveUninitialized: true,
     cookie: {
