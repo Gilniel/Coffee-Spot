@@ -2,18 +2,29 @@
   "engines": {
     "node": "20.15.1"
   },
-  "name": "coffeespot",
+  "name": "coffee-spot",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Full-stack web application for discovering, reviewing, and sharing coffee bar experiences.",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "mongoose",
+    "ejs",
+    "javascript",
+    "full-stack",
+    "coffee",
+    "mapbox",
+    "cloudinary"
+  ],
+  "author": "Gilniel Cotto Ortiz",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "@mapbox/mapbox-sdk": "^0.16.1",
     "cloudinary": "^1.41.3",
